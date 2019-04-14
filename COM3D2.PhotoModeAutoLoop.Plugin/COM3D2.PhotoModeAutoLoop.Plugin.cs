@@ -160,7 +160,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
         {
-            Log(scene.name);
+            //Log(scene.name);
             try
             {
                 if (scene.name == "ScenePhotoMode")
