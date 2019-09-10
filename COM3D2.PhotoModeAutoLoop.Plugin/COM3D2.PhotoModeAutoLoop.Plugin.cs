@@ -26,7 +26,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
     ///=========================================================================
     [PluginFilter("COM3D2x64"),
         PluginName("COM3D2.PhotoModeAutoLoop.Plugin edit by Lilly"),
-        PluginVersion("1.0.0.4")]
+        PluginVersion("190911")]
     public class PhotoModeAutoLoop : PluginBase
     {
         //private bool isStudio = false;
@@ -43,8 +43,18 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
             }
             catch (Exception e)
             {
-                Debug.LogError(e.ToString());
+                LogErr(e.ToString());
             }
+        }
+
+        private static void LogErr(object e)
+        {
+            Debug.LogError("PhotoModeAutoLoop:" + e);
+        }
+
+        private void Log(object o)
+        {
+            Console.WriteLine("PhotoModeAutoLoop:" + o);
         }
 
         public void Update()
@@ -68,32 +78,33 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
                 //	Input.GetKeyDown(KeyCode.L))
                 {
                     isLoop += 1;
-                    if (isLoop > 5)
+                    //if (isLoop > 5)
+                    if (isLoop > 2)
                     {
                         isLoop = 0;
                     }
                     switch (isLoop)
                     {
+                        //case 1:
+                        //    Console.WriteLine("Case Once");
+                        //    //BepInEx.Logger.Log(LogLevel.Info, "Case Once");
+                        //    break;
+                        //case 2:
+                        //    Console.WriteLine("Case Loop");
+                        //    //BepInEx.Logger.Log(LogLevel.Info, "Case Loop");
+                        //    break;
                         case 1:
-                            Console.WriteLine("Case Once");
-                            //BepInEx.Logger.Log(LogLevel.Info, "Case Once");
-                            break;
-                        case 2:
-                            Console.WriteLine("Case Loop");
-                            //BepInEx.Logger.Log(LogLevel.Info, "Case Loop");
-                            break;
-                        case 3:
                             Console.WriteLine("Case PingPong");
                             //BepInEx.Logger.Log(LogLevel.Info, "Case PingPong");
                             break;
-                        case 4:
+                        case 2:
                             Console.WriteLine("Case Default");
                             //BepInEx.Logger.Log(LogLevel.Info, "Case Default");
                             break;
-                        case 5:
-                            Console.WriteLine("Case ClampForever");
-                            //BepInEx.Logger.Log(LogLevel.Info, "Case ClampForever");
-                            break;
+                        //case 5:
+                        //    Console.WriteLine("Case ClampForever");
+                        //    //BepInEx.Logger.Log(LogLevel.Info, "Case ClampForever");
+                        //    break;
                         default:
                             Console.WriteLine("Default case");
                             //BepInEx.Logger.Log(LogLevel.Info, "Case case");
@@ -120,26 +131,24 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
                                         //스위치 방식으로 변경
                                         switch (isLoop)
                                         {
+                                            //case 1:
+                                            //    anm.wrapMode = WrapMode.Once;
+                                            //    break;
+                                            //case 2:
+                                            //    anm.wrapMode = WrapMode.Loop;
+                                            //    break;
                                             case 1:
-                                                anm.wrapMode = WrapMode.Once;
-
-                                                break;
-                                            case 2:
-                                                anm.wrapMode = WrapMode.Loop;
-
-                                                break;
-                                            case 3:
                                                 anm.wrapMode = WrapMode.PingPong;
                                                 //Console.WriteLine("Case 2 PingPong");
                                                 break;
-                                            case 4:
+                                            case 2:
                                                 anm.wrapMode = WrapMode.Default;
                                                 //Console.WriteLine("Case 3 Default");
                                                 break;
-                                            case 5:
-                                                anm.wrapMode = WrapMode.ClampForever;
+                                            //case 5:
+                                               // anm.wrapMode = WrapMode.ClampForever;
                                                 //Console.WriteLine("Case 4 ClampForever");
-                                                break;
+                                                //break;
                                                 //default:
                                                 //    Console.WriteLine("Default case");
                                                 //    break;
@@ -154,7 +163,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
             }
             catch (Exception e)
             {
-                Debug.LogError(e.ToString());
+                LogErr(e.ToString());
             }
         }
 
@@ -181,7 +190,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
             }
             catch (Exception e)
             {
-                Debug.LogError(e.ToString());
+                LogErr(e.ToString());
             }
         }
 
@@ -192,7 +201,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
             }
             catch (Exception e)
             {
-                Debug.LogError(e.ToString());
+                LogErr(e.ToString());
             }
         }
 
@@ -203,14 +212,11 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
             }
             catch (Exception e)
             {
-                Debug.LogError(e.ToString());
+                LogErr(e.ToString());
             }
         }
 
-        private void Log(object o)
-        {
-            Console.WriteLine("[AutoLoop] " + o);
-        }
+
 
 
 

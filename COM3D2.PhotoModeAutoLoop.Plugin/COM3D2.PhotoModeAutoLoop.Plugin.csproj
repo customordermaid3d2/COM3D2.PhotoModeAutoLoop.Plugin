@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>COM3D2.PhotoModeAutoLoop.Plugin</RootNamespace>
     <AssemblyName>COM3D2.PhotoModeAutoLoop.Plugin</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -32,36 +33,40 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\COM3D2\COM3D2x64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>D:\COM3D2\COM3D2x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="Assembly-UnityScript-firstpass">
-      <HintPath>D:\COM3D2\COM3D2x64_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\Assembly-UnityScript-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="ExIni">
-      <HintPath>D:\COM3D2\COM3D2x64_Data\Managed\ExIni.dll</HintPath>
+      <HintPath>F:\COM3D2_my\Sybaris\ExIni.dll</HintPath>
     </Reference>
     <Reference Include="PluginExt">
-      <HintPath>D:\COM3D2\Sybaris\PluginExt.dll</HintPath>
+      <HintPath>F:\COM3D2_my\Sybaris\UnityInjector\PluginExt.dll</HintPath>
     </Reference>
     <Reference Include="System" />
-    <Reference Include="System.Core" />
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\System.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
+    <Reference Include="System.Data">
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\System.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>D:\COM3D2\COM3D2x64_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:\COM3D2\COM3D2x64_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\COM3D2.1.33.1\COM3D2x64_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityInjector">
-      <HintPath>D:\COM3D2\Sybaris bak\UnityInjector.dll</HintPath>
+      <HintPath>F:\COM3D2_my\Sybaris\UnityInjector.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
