@@ -76,7 +76,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
                 //if ((Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.RightControl)) &&
                 //	(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)) &&
                 //	Input.GetKeyDown(KeyCode.L))
-                {
+                {                    
                     isLoop += 1;
                     //if (isLoop > 5)
                     if (isLoop > 2)
@@ -93,12 +93,12 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
                         //    Console.WriteLine("Case Loop");
                         //    //BepInEx.Logger.Log(LogLevel.Info, "Case Loop");
                         //    break;
-                        case 1:
-                            Console.WriteLine("Case PingPong");
+                        case 1:                            
+                            Log("Case PingPong. ");
                             //BepInEx.Logger.Log(LogLevel.Info, "Case PingPong");
                             break;
                         case 2:
-                            Console.WriteLine("Case Default");
+                            Log("Case Default");
                             //BepInEx.Logger.Log(LogLevel.Info, "Case Default");
                             break;
                         //case 5:
@@ -106,7 +106,7 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
                         //    //BepInEx.Logger.Log(LogLevel.Info, "Case ClampForever");
                         //    break;
                         default:
-                            Console.WriteLine("Default case");
+                            Log("case game");
                             //BepInEx.Logger.Log(LogLevel.Info, "Case case");
                             break;
                     }
