@@ -172,12 +172,12 @@ namespace COM3D2.PhotoModeAutoLoop.Plugin
             //Log(scene.name);
             try
             {
-                if (scene.name == "ScenePhotoMode")
+                if (scene.name == "ScenePhotoMode") 
                 //if (scene.buildIndex == 27)
                 {
                     //スタジオモード
                     //isStudio = true;
-                    isLoop = 2;
+                    isLoop = 1;
                     Log("Case Loop");
                 }
                 else
